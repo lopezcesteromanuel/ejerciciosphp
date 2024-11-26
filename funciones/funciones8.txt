@@ -1,0 +1,8 @@
+from collections import Counter
+
+def numero_mas_frecuente(*numeros):
+    contador = Counter(numeros)
+    return contador.most_common(1)[0][0]
+
+# Ejemplo de uso
+print(numero_mas_frecuente(1, 2, 2, 3, 4, 2))
